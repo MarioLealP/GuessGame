@@ -9,10 +9,10 @@ while mynum is not ranint:
     except ValueError:
         print("Não foi introduzido um numero")
     else:
-            if mynum > ranint:
-                print("O numero introduzido é maior que o numero certo")
-            elif mynum < ranint:
-                print("O numero introduzido é menor que o numero certo")
-            else:
-                break
+        if mynum > ranint:
+            print("O numero introduzido é maior que o numero certo")
+        elif mynum < ranint:
+            print("O numero introduzido é menor que o numero certo")
+        else:
+            break
 print("O numero esta certo")
