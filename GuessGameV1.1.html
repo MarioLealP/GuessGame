@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <h1>Input the first number to start the game</h1>
+  <br>
+  <p id=rannum></p>
+  <br>
+  <input id="InputNumber">
+  <br>
+  <button type="button" onClick="GuessTheNumb()">Submit</button>
+  <br>
+  <p>Attempts Made:</p>
+  <p id="GuessNumber"><br></p>
+  <p id="ResultGuess"></p>
+  <script>
+  var randomInt = RanNumbGen(0, 100), MyGuess = -1, GuessCount = 0, GuessResult;
+
+  document.getElementById("rannum").innerHTML = randomInt;
+  function RanNumbGen(min, max) {
+
+    min = Math.ceil(min);
+
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+
+  }
+
+  function GuessTheNumb(){
+    MyGuess = document.getElementById("InputNumber").value;
+    switch(true){
+      case (MyGuess == randomInt):
+        GuessResult = "Congratulations you got it right!"
+        document.getElementById("GuessNumber").innerHTML = GuessCount;
+        document.getElementById("ResultGuess").innerHTML = GuessResult;
+        break;
+      case (MyGuess < randomInt):
+        GuessResult = "Your input number is to low!"
+        GuessCount += 1
+        document.getElementById("GuessNumber").innerHTML = GuessCount;
+        document.getElementById("ResultGuess").innerHTML = GuessResult;
+        break;
+      case (MyGuess > randomInt):
+        GuessResult = "Your input number is to high!"
+        GuessCount += 1
+        document.getElementById("GuessNumber").innerHTML = GuessCount;
+        document.getElementById("ResultGuess").innerHTML = GuessResult;
+        break;
+      case (GuessCount == 10):
+        alert("You are out of options please refresh the page!")
+        document.getElementById("GuessNumber").innerHTML = GuessCount;
+        document.getElementById("ResultGuess").innerHTML = GuessResult;
+        break;
+      default:
+        GuessResult = "That's not a number!"
+    }
+  }
+
+  </script>
+
+
+
+</body>
+</html>
