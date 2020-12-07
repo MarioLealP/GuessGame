@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>Guess Game</title>
+<body>
+
+  <h1>Click the button to start the game.</h1>
+
+    <button onClick="guess()">Start</button>
+
+    <input type="button" value="Restart Game" onClick="document.location.reload(true)">
+<script>
+  var ranint = rannumb(0, 100), mynum = -1, i = 0;
+
+  document.getElementById("rannum").innerHTML = ranint;
+
+  function rannumb(min, max) {
+
+    min = Math.ceil(min);
+
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+
+  }
+
+  function guess() {
+
+      while (i < 10 && mynum != ranint) {
+
+      mynum = prompt("Enter your guess")
+
+      i += 1;
+
+      if(mynum == null){
+        break
+      }
+      else{
+
+        if(mynum > ranint){
+
+          alert("Guess Number is to high. Current guess: " + i)
+
+        }
+
+        else{
+
+          if (mynum < ranint){
+
+            alert("Guess Number is to low. Current guess: " + i)
+
+          }
+
+          else{
+
+            alert("You guessed right! It only took " + i + " guesses")
+
+          }
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>

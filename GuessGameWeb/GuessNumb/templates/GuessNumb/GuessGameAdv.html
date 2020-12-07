@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Game</title>
+</head>
+<body>
+    <h1> Hi! {{rannum}} </h1>
+
+    {% if guess == 10 %}
+      <h1>You are out of attempts!</h1>
+    {% elif mynum == rannum %}
+      <h1>You are correct!</h1>
+    {% elif mynum < rannum %}
+      {guess += 1}
+      <h2>Your input number is too low!</h2>
+    {% elif mynum > rannum %}
+      {guess += 1}
+      <h2>Your input number is too high!</h2>
+    {% endif %}
+
+</body>
+</html>
