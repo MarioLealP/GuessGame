@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GuessGameWeb",
+    "\\GuessGameWeb\\GuessGameWeb",
+    "\\GuessGameWeb\\GuessNumb",
+    "\\GuessGameWeb\\GuessNumb\\migrations",
+    "\\GuessGameWeb\\GuessNumb\\templates",
+    "\\GuessGameWeb\\GuessNumb\\templates\\GuessNumb"
+  ],
+  "SelectedNode": "\\GuessGameWeb\\GuessNumb\\models.py",
+  "PreviewInSolutionExplorer": false
+}
