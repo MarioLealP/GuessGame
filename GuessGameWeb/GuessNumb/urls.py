@@ -8,4 +8,6 @@ urlpatterns = [
     path('BasicGame/', views.BasicGame, name="Basic-Game"),
     path('MedGame/', views.MedGame, name="Med-Game"),
     path('AdvGame/', views.AdvGame, name="Adv-Game"),
+    path('AdvGame/confirm', views.confirm, name="Adv-Game"),
+    path('AdvGame/ResetGame', views.ResetGame)
 ]
