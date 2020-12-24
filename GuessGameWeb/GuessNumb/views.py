@@ -34,7 +34,7 @@ def confirm(request):
 
     guess = guess + 1
 
-    if guess > 9:
+    if guess > 10:
         result = "Out of attempts!"
 
     elif mynum > rannum:

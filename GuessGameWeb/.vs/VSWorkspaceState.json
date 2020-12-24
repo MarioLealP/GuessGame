@@ -4,8 +4,11 @@
     "\\GuessGameWeb",
     "\\GuessNumb",
     "\\GuessNumb\\templates",
-    "\\GuessNumb\\templates\\GuessNumb"
+    "\\GuessNumb\\templates\\GuessNumb",
+    "\\users",
+    "\\users\\templates",
+    "\\users\\templates\\users"
   ],
-  "SelectedNode": "\\GuessNumb\\views.py",
+  "SelectedNode": "\\users\\views.py",
   "PreviewInSolutionExplorer": false
 }
