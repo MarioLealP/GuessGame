@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import random
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 rannum = random.randint(1, 100)
@@ -15,9 +16,6 @@ def home(request):
 def about(request):
     return render(request, "GuessNumb/about.html")
 
-
-def BasicGame(request):
-    return render(request, "GuessNumb/GuessGame.html")
 
 
 def MedGame(request):
@@ -73,3 +71,7 @@ def ResetGame(request):
 
     context['RandNumb'] = rannum
     return render(request, "GuessNumb/GuessGameAdv.html", context)
+
+@login_required
+def logingame(request):
+    return render(request, "GuessNumb/GuessGame.html")

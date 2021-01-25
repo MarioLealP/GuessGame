@@ -6,8 +6,11 @@
     "\\GuessGameWeb\\GuessNumb",
     "\\GuessGameWeb\\GuessNumb\\migrations",
     "\\GuessGameWeb\\GuessNumb\\templates",
-    "\\GuessGameWeb\\GuessNumb\\templates\\GuessNumb"
+    "\\GuessGameWeb\\GuessNumb\\templates\\GuessNumb",
+    "\\GuessGameWeb\\users",
+    "\\GuessGameWeb\\users\\templates",
+    "\\GuessGameWeb\\users\\templates\\users"
   ],
-  "SelectedNode": "\\GuessGameWeb\\GuessNumb\\models.py",
+  "SelectedNode": "\\GuessGameWeb\\GuessGameWeb\\settings.py",
   "PreviewInSolutionExplorer": false
 }

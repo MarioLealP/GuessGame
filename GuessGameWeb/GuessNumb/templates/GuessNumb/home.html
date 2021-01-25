@@ -4,10 +4,22 @@
     <title></title>
 </head>
 <body>
+    {% if messages %}
+    {% for message in messages %}
+    <div>
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
     <h1>Blog Home!</h1>
-    <a href="http://178.166.1.127:20545/about">About</a><br />
-    <a href="http://178.166.1.127:20545/BasicGame">Basic Game</a><br />
+    <a href="http://178.166.1.127:20545/About">About</a><br />
+    <a href="http://178.166.1.127:20545/register/">Register</a><br />
+    <a href="http://178.166.1.127:20545/login/">Log In</a><br />
+    <a href="http://178.166.1.127:20545/logout/">Log Out</a><br />
+    <a href="http://178.166.1.127:20545/LoginGame/">Login Game</a><br />
     <a href="http://178.166.1.127:20545/MedGame">Medium Game</a><br />
     <a href="http://178.166.1.127:20545/AdvGame">Adv Game</a>
+
+
 </body>
 </html>
