@@ -12,6 +12,9 @@ context['guess'] = 0
 def home(request):
     return render(request, "GuessNumb/home.html")
 
+def SpaceInv(request):
+    return render(request, "GuessNumb/SpaceInv.html")
+
 
 def about(request):
     return render(request, "GuessNumb/about.html")
